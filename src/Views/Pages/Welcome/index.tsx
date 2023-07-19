@@ -40,11 +40,8 @@ export default function Welcome() {
                             Join the biggest campus and more ridesharing network <br /> with the largest active rider community.
                         </p>
                         <div className="space-between left">
-                            <Button variant="contained" disableElevation className='primary-button' color="primary">
-                                Sign up as a partner.
-                            </Button>
                             <Button variant="contained" disableElevation className='primary-button' color="secondary">
-                                Why 1GoRide?.
+                                Sign up as a partner.
                             </Button>
                         </div>
                     </div>
@@ -356,7 +353,7 @@ export default function Welcome() {
                 </div>
             </div>
 
-            <div className="page-section sectioning">
+            <div className="page-section sectioning" id='why-choose-us'> 
                 <div className="section-split">
                     <div className="hero-inro-area">
                         <h2 className='h2-headline'>
