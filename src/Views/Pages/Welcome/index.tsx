@@ -12,7 +12,7 @@ import SuzukiMiniBusFront from '../../../assets/img/suzuki-mini-bus-front.jpg'
 import SuzukiMiniBusback from '../../../assets/img/suzuki-mini-bus-back.jpg'
 
 import { motion } from "framer-motion"
-import { Email, AppRegistration, Handshake, NoAccounts, PermIdentity, DocumentScanner, LabelImportant, ExpandMore, ChevronRight, PinDrop, LocationCity } from '@mui/icons-material'
+import { Email, AppRegistration, Handshake, NoAccounts, PermIdentity, DocumentScanner, LabelImportant, ExpandMore, ChevronRight, PinDrop } from '@mui/icons-material'
 
 export default function Welcome() {
 
@@ -21,6 +21,8 @@ export default function Welcome() {
 
     const handleChange =
         (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+            const ev = event
+            console.log(ev.target)
             setExpanded(isExpanded ? panel : false);
         };
 
