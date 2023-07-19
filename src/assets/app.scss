@@ -318,3 +318,21 @@ button.primary-button {
         }
     }
 }
+
+
+
+
+
+@media (max-width:600px) {
+    .page-section.hero-area {
+        flex-direction: column-reverse;
+        background: inherit;
+        min-height: 0;
+        margin: 0;
+    }
+
+    .section-split{
+        width: 100%;
+        justify-content: left;
+    }
+}

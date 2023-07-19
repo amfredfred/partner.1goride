@@ -12,7 +12,7 @@ import SuzukiMiniBusFront from '../../../assets/img/suzuki-mini-bus-front.jpg'
 import SuzukiMiniBusback from '../../../assets/img/suzuki-mini-bus-back.jpg'
 
 import { motion } from "framer-motion"
-import { Email, AppRegistration, Handshake, NoAccounts, PermIdentity, DocumentScanner, LabelImportant, ExpandMore, ChevronRight, PinDrop } from '@mui/icons-material'
+import { Email, AppRegistration, Handshake, NoAccounts, PermIdentity, DocumentScanner, LabelImportant, ExpandMore, ChevronRight, PinDrop, ArrowForward } from '@mui/icons-material'
 
 export default function Welcome() {
 
@@ -40,8 +40,8 @@ export default function Welcome() {
                             Join the biggest campus and more ridesharing network <br /> with the largest active rider community.
                         </p>
                         <div className="space-between left">
-                            <Button variant="contained" disableElevation className='primary-button' color="secondary">
-                                Sign up as a partner.
+                            <Button variant='contained' disableElevation className='primary-button'  >
+                                Sign up as a partner <ArrowForward />
                             </Button>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ export default function Welcome() {
                             animate={{ opacity: 1, x: 0 }}
                             whileInView={{
                                 rotateY: ['30deg', "60deg", "360deg", "50deg", "0deg"],
-                                y:[-30, -10, -5, 0]
+                                y: [-30, -10, -5, 0]
                             }}
                             src={OneGoLogo}
                             loading="lazy"
@@ -353,7 +353,7 @@ export default function Welcome() {
                 </div>
             </div>
 
-            <div className="page-section sectioning" id='why-choose-us'> 
+            <div className="page-section sectioning" id='why-choose-us'>
                 <div className="section-split">
                     <div className="hero-inro-area">
                         <h2 className='h2-headline'>

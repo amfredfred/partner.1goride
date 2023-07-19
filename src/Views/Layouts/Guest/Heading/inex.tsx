@@ -15,7 +15,7 @@ export default function Heading() {
                         src={OneGoLogo}
                     />ride
                 </h2>
-                <Button color="secondary" variant='contained' >
+                <Button   variant='contained' >
                     Become A Partner
                 </Button>
             </div>
