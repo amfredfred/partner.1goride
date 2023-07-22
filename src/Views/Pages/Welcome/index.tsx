@@ -12,7 +12,12 @@ import SuzukiMiniBusFront from '../../../assets/img/suzuki-mini-bus-front.jpg'
 import SuzukiMiniBusback from '../../../assets/img/suzuki-mini-bus-back.jpg'
 
 import { motion } from "framer-motion"
-import { Email, AppRegistration, Handshake, NoAccounts, PermIdentity, DocumentScanner, LabelImportant, ExpandMore, ChevronRight, PinDrop, ArrowForward } from '@mui/icons-material'
+import {
+    Email, AppRegistration,
+    NoAccounts, VerifiedUser, DocumentScanner, LabelImportant, ExpandMore, ChevronRight, PinDrop, ArrowForward,
+     Notes,
+    CarRental
+} from '@mui/icons-material'
 
 export default function Welcome() {
 
@@ -32,12 +37,10 @@ export default function Welcome() {
                 <div className="section-split">
                     <div className="hero-inro-area">
                         <h1 className='hero-area-intro-headline'>
-                            VEHICLE
-                            PARTNER<br />
-                            PROPOSAL
+                            SMART WAY TO<br /> INVEST
                         </h1>
                         <p className="hero-area-intro-description">
-                            Join the biggest campus and more ridesharing network <br /> with the largest active rider community.
+                            Earn up to 185% interest on your capital as a 1go vehicle partner.
                         </p>
                         <div className="space-between left">
                             <Button variant='contained' disableElevation className='primary-button'  >
@@ -67,7 +70,7 @@ export default function Welcome() {
                 <div className="section-split">
                     <div className="hero-inro-area">
                         <h2 className='h2-headline'>
-                            Meet 1GoRide
+                            About 1Go
                         </h2>
                         <p className="hero-area-intro-description">
                             1go is a campus ride-hailing brand committed to offering fast, cheap and
@@ -122,11 +125,11 @@ export default function Welcome() {
                                     </div>
                                     <div className="space-between">
                                         <span>Estimated price(Capital):</span>
-                                        <span>NGN 4,100,000/$9,020</span>
+                                        <span>NGN 3,500,000.00</span>
                                     </div>
                                     <div className="space-between">
                                         <span>ROI:</span>
-                                        <span>NGN 2,000,000/$4,400 P.A</span>
+                                        <span>NGN 2,000,000 P.A</span>
                                     </div>
                                     <div className="space-between">
                                         <span>Investment duration: </span>
@@ -147,11 +150,11 @@ export default function Welcome() {
                                     </div>
                                     <div className="space-between">
                                         <span>Estimated price(Capital):</span>
-                                        <span>NGN 2,200,000/$4,269</span>
+                                        <span>NGN 2,200,000</span>
                                     </div>
                                     <div className="space-between">
                                         <span>ROI:</span>
-                                        <span>NGN 1,320,000/$1,610 P.A</span>
+                                        <span>NGN 1,320,000 P.A</span>
                                     </div>
                                     <div className="space-between">
                                         <span>Investment duration: </span>
@@ -199,15 +202,14 @@ export default function Welcome() {
                                     initial={{ scale: 0 }} className='flexed-text-wrap'>
                                     <h3 className="h3-headline">Apply for partnership</h3>
                                     <p className="hero-area-intro-description">
-                                        A potential 1go vehicle partner can apply by sending us a mail at&nbsp;
-                                        <a href="mailto:info@1goexplore.com">info@1goexplore.com</a> We will respond to your mail within the next 24 hours.
+                                        A potential 1go vehicle partner can apply by clicking the call to action button on the homepage of this site.
                                     </p>
                                 </motion.div>
                             </div>
                             <div className="flexed-card">
                                 <div className="space-between">
                                     <div className="icons-wrap">
-                                        <Handshake style={{ fontSize: 40 }} />
+                                        <CarRental style={{ fontSize: 40 }} />
                                     </div>
                                 </div>
                                 <motion.div
@@ -236,19 +238,36 @@ export default function Welcome() {
                                     </p>
                                 </motion.div>
                             </div>
-                            <Alert variant="filled" severity="info">
-                                This is a compulsory step to becoming a 1go vehicle partner, all agreement
-                                made would be documented, carrying the signatures of both parties. It is also
-                                advisable to have your lawyer screen through each document before
-                                appending your signature to it.<br /> <br />
-                                Viola! With these few easy steps you can now become a 1go vehicle partner.
-                            </Alert>
-                            <br />
-                            <div className="space-betweem">
-                                <Alert severity='warning'>
-                                    Please note that the vehicle(s) would become the property of 1go
-                                    technologies Ltd after the investment duration of five(5) years.
+                            <div className="flexed-card">
+                                <div className="space-between">
+                                    <div className="icons-wrap">
+                                        <Notes style={{ fontSize: 40 }} />
+                                    </div>
+                                </div>
+                                <motion.div
+                                    whileInView={{ scale: [0, 1] }}
+                                    initial={{ scale: 0 }}
+                                    className='flexed-text-wrap'>
+                                    <h3 className="h3-headline">Paperwork</h3>
+                                    <p className="hero-area-intro-description">
+                                        This is a compulsory step to becoming a 1go vehicle partner, all agreement
+                                        made would be documented, carrying the signatures of both parties. It is also
+                                        advisable to have your lawyer screen through each document before
+                                        appending your signature to it.
+                                    </p>
+                                </motion.div>
+                            </div>
+                            <div>
+                                <Alert color="success">
+                                    Viola! With these few easy steps you can now become a 1go vehicle partner.
                                 </Alert>
+                                <br />
+                                <div className="space-betweem">
+                                    <Alert severity='warning'>
+                                        Please note that the vehicle(s) would become the property of 1go
+                                        technologies Ltd after the investment duration of five(5) years.
+                                    </Alert>
+                                </div>
                             </div>
                         </div>
                         {/* 
@@ -294,7 +313,7 @@ export default function Welcome() {
                             <div className="flexed-card">
                                 <div className="space-between">
                                     <div className="icons-wrap">
-                                        <PermIdentity style={{ fontSize: 40 }} />
+                                        <VerifiedUser style={{ fontSize: 40 }} />
                                     </div>
                                 </div>
                                 <motion.div
@@ -372,7 +391,7 @@ export default function Welcome() {
                                     className='flexed-text-wrap'>
                                     <h3 className="h3-headline">Good ROI</h3>
                                     <p className="hero-area-intro-description">
-                                        1go vehicle partners receive ROI of up to 50% per annum, which puts this
+                                        1go vehicle partners receive ROI of up to  185% on their capital, which puts this
                                         amongst the list of top lucrative investment options.
                                     </p>
                                 </motion.div>
