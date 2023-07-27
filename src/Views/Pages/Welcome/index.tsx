@@ -7,7 +7,6 @@ import { useState } from 'react'
 import OneGoLogo from '../../../assets/img/1-goride-logo.png'
 import NissanVanatteFront from '../../../assets/img/nissan-vanatte-front.jpg'
 import NissanVanatteSide from '../../../assets//img/nissan-vanatte-side.jpg'
-
 import SuzukiMiniBusFront from '../../../assets/img/suzuki-mini-bus-front.jpg'
 import SuzukiMiniBusback from '../../../assets/img/suzuki-mini-bus-back.jpg'
 
@@ -15,7 +14,7 @@ import { motion } from "framer-motion"
 import {
     Email, AppRegistration,
     NoAccounts, VerifiedUser, DocumentScanner, LabelImportant, ExpandMore, ChevronRight, PinDrop, ArrowForward,
-     Notes,
+     Notes,Twitter,WhatsApp,
     CarRental
 } from '@mui/icons-material'
 
@@ -33,44 +32,13 @@ export default function Welcome() {
 
     return (
         <>
-            <div className="page-section hero-area">
-                <div className="section-split">
-                    <div className="hero-inro-area">
-                        <h1 className='hero-area-intro-headline'>
-                            SMART WAY TO<br /> INVEST
-                        </h1>
-                        <p className="hero-area-intro-description">
-                            Earn up to 185% interest on your capital as a 1go vehicle partner.
-                        </p>
-                        <div className="space-between left">
-                            <Button variant='contained' disableElevation className='primary-button'  >
-                                Sign up as a partner <ArrowForward />
-                            </Button>
-                        </div>
-                    </div>
-                </div>
-                <div className="section-split">
-                    <div className="hero-logo-container">
-                        <motion.img
-                            initial={{ opacity: 0, x: -1000 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            whileInView={{
-                                rotateY: ['30deg', "60deg", "360deg", "50deg", "0deg"],
-                                y: [-30, -10, -5, 0]
-                            }}
-                            src={OneGoLogo}
-                            loading="lazy"
-                            alt=""
-                            className="one-go-logo hero-area" />
-                    </div>
-                </div>
-            </div>
+      
 
             <div className="page-section sectioning">
                 <div className="section-split">
                     <div className="hero-inro-area">
                         <h2 className='h2-headline'>
-                            About 1Go
+                            About 1go
                         </h2>
                         <p className="hero-area-intro-description">
                             1go is a campus ride-hailing brand committed to offering fast, cheap and
@@ -441,8 +409,7 @@ export default function Welcome() {
                         <p className="hero-area-intro-description">
                             Here are some frequently asked questions, which might answer some of
                             the questions you might have and if it doesn't, <br /> please send us a mail at
-                            <a href="mailto:info@1goexplore.com">info@1goexplore.com</a> or call : <a target="_blank" href="https://wa.me/+2349135921624">+2349135921624</a>
-
+                            <a href="mailto:info@1goride.com">info@1goride.com</a> or call : <a target="_blank" href="https://wa.me/+2349135921624">+2349135921624</a>
                         </p>
 
 
@@ -456,9 +423,7 @@ export default function Welcome() {
 
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    You can apply to become a 1go vehicle partner by sending us a mail at
-                                    <a href="mailto:info@1goexplore.com">info@1goexplore.com </a>
-
+                                    You can apply to become a vehicle partner by clicking the call to action button on the homepage of this site.
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion className='flexed-arccodion' expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -591,7 +556,7 @@ export default function Welcome() {
                                 <div className="icons-wrap plain left">
                                     <div className="space-between left"  >
                                         <PinDrop style={{ fontSize: 40 }} />
-                                        <h3 className="h3-headline">Website</h3>
+                                        <h3 className="h3-headline">Contact</h3>
                                     </div>
                                 </div>
 
@@ -599,9 +564,15 @@ export default function Welcome() {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     initial={{ opacity: 0, x: -100 }}
                                     className='flexed-text-wrap'>
-                                    <p className="hero-area-intro-description">
-                                        <a href="http://www.1goexplore.com">http://www.1goexplore.com</a>
-                                    </p>
+                                    <br />
+                                    <div className="space-between left">
+                                        <a href="">
+                                            <WhatsApp />
+                                        </a>
+                                        <a href="">
+                                            <Twitter />
+                                        </a>
+                                    </div>
                                 </motion.div>
                             </div>
 
@@ -618,7 +589,7 @@ export default function Welcome() {
                                     initial={{ opacity: 0, x: -100 }}
                                     className='flexed-text-wrap'>
                                     <p className="hero-area-intro-description">
-                                        Email: <a href="mailto:info@1goexplore.com">info@1goexplore.com</a>
+                                        Email: <a href="mailto:info@1goride.com">info@1goride.com</a>
                                         <br />
                                         Phone:  <a href="tel:+2349135921624">+2349135921624</a>
                                         <br />

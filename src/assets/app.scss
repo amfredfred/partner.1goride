@@ -3,7 +3,7 @@
     line-height: 1.5;
     font-weight: 400;
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
+    color: rgb(255, 255, 255);
     background: #1e1e20; //#242424
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -46,12 +46,8 @@ body,
 
 a {
     font-weight: 500;
-    color: #646cff;
+    color: white;
     text-decoration: inherit;
-}
-
-a:hover {
-    color: #535bf2;
 }
 
 h1 {
@@ -109,6 +105,10 @@ h1 {
     background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 0);
     background-size: 40px 40px;
     background-position: -0px -40px;
+    position: relative !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
 }
 
 .page-content {
@@ -135,21 +135,54 @@ h1 {
 .page-section {
     width: 100%;
     min-height: 50vh;
-    border-radius: 10px;
     margin-top: 2rem;
     gap: 1rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: #1e1e20; //#242424
+    // background: #1e1e20; //#242424
     padding: 2rem;
     margin-top: 5rem;
 
+    &.hero-area {
+        position: relative !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-attachment: fixed !important;
+        height: 100vh;
+        margin: auto;
+        isolation: isolate;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
 
-    // &.sectioning {
+        .space-center {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: auto;
+            width: 1220px;
+            max-width: 100%;
+        }
 
-    // }
+        &::after {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            z-index: -1;
+            background: #000000f0;
+        }
+    }
+
+
 }
+
+
 
 .hero-inro-area {
     width: 100%;
@@ -327,11 +360,21 @@ button.primary-button {
     .page-section.hero-area {
         flex-direction: column-reverse;
         background: inherit;
-        min-height: 0;
-        margin: 0;
     }
 
-    .section-split{
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .page-section {
+        height: max-content;
+
+        &.hero-area {
+            height: max-content;
+        }
+    }
+
+    .section-split {
         width: 100%;
         justify-content: left;
     }

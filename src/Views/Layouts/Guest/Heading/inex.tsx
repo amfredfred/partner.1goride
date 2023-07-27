@@ -13,10 +13,11 @@ export default function Heading() {
                     <motion.img
                         className='site-logo'
                         src={OneGoLogo}
-                    />ride
+                    />
+                    {/* ride */}
                 </h2>
-                <Button   variant='contained' >
-                    Become A Partner
+                <Button variant='contained' >
+                    <a href="https://wa.me/message/YAPZL6JUCOXHB1">Become A Partner</a>
                 </Button>
             </div>
         </div>
