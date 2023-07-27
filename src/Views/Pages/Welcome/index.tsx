@@ -4,7 +4,6 @@ import {
     AccordionDetails
 } from '@mui/material'
 import { useState } from 'react'
-import OneGoLogo from '../../../assets/img/1-goride-logo.png'
 import NissanVanatteFront from '../../../assets/img/nissan-vanatte-front.jpg'
 import NissanVanatteSide from '../../../assets//img/nissan-vanatte-side.jpg'
 import SuzukiMiniBusFront from '../../../assets/img/suzuki-mini-bus-front.jpg'
@@ -13,7 +12,7 @@ import SuzukiMiniBusback from '../../../assets/img/suzuki-mini-bus-back.jpg'
 import { motion } from "framer-motion"
 import {
     Email, AppRegistration,
-    NoAccounts, VerifiedUser, DocumentScanner, LabelImportant, ExpandMore, ChevronRight, PinDrop, ArrowForward,
+    NoAccounts, VerifiedUser, DocumentScanner, LabelImportant, ExpandMore, ChevronRight, PinDrop, 
      Notes,Twitter,WhatsApp,
     CarRental
 } from '@mui/icons-material'
